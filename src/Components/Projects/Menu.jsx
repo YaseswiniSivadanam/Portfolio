@@ -10,7 +10,7 @@ const Menu = [
         title: 'My Portfolio Website',
         category: 'React, CSS',
         description: 'A portfolio website to showcase my projects and skills.',
-        link: "https://yaseswinisivadanam.github.io/Solver/",
+        link: "https://yaseswinisivadanam.github.io/Portfolio/",
     },
     {
         id : 2,
