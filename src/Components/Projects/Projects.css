@@ -1,0 +1,156 @@
+.work_thumbnail img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* or 'contain' depending on your needs */
+    border-radius: var(--border-radius);
+}
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.projects-title {
+    position: relative;
+}
+
+.projects-title h1{
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.projects-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.work_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+
+/* .work_card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+} */
+
+.work_card {
+    position: relative;
+    overflow: hidden;
+    border-radius:10px;
+    height: 100%;
+}
+
+.work_thumbnail {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.work_card img {
+    height : 250px;
+}
+
+.work_mask {
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.work_card:hover .work_mask {
+    opacity : 0.9;
+}
+
+.work_category {
+    color: #fff;
+    background: linear-gradient(270deg, #DF8908 20%, #B415FF 100%);
+    /* background-color: #DF8908; */
+    border-bottom-left-radius: 0.98rem;
+    border-bottom-right-radius: 0.98rem;
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+    font-size: small;
+    display: inline-block;
+    padding: 0.19rem 0.625rem;
+    transform: translateY(-40px);
+    transition: 0.3s;
+}
+
+.work_title {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 0.98rem;
+    padding: 0 1.25rem;
+    position: absolute;
+    top: 3.75rem;
+    transform: translateY(30px);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.work_description {
+    text-align: justify;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 0 0.98rem;
+    padding: 0 1.25rem;
+    position: absolute;
+    top: 6.25rem;
+    transform: translateY(30px);
+    transition: 0.3s;
+    opacity: 0; 
+}
+
+
+.work_button {
+    color: #fff;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    font-size: (--h3-font-size);
+    display: block;
+    background: linear-gradient(270deg, #DF8908 20%, #B415FF 100%);
+    /* background-color: #DF8908; */
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.work_button:hover {
+    background: linear-gradient(270deg, #B415FF 20%, #DF8908 100%);
+    transform: scale(1.1);
+}
+
+.work_card:hover .work_button {
+    opacity: 1;
+}
+
+.work_card:hover .work_title,
+.work_card:hover .work_category,
+.work_card:hover .work_description {
+    transform: translateY(0);
+    opacity: 1;
+}

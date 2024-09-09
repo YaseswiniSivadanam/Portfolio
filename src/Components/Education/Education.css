@@ -1,0 +1,56 @@
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.education-title {
+    position: relative;
+}
+
+.education-title h1 {
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.education-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.vertical-timeline-element-content {
+    background: transparent !important;
+    border: 2px solid #fff;
+    box-shadow: none;
+    padding: 5px;
+}
+
+.vertical-timeline-element .vertical-timeline-element-course {
+    font-size: 25px;
+    font-weight: 900;
+    background: linear-gradient(150deg, #DF8908 , #b415FF );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.vertical-timeline-element .vertical-timeline-element-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.vertical-timeline-element .vertical-timeline-element-location {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.vertical-timeline-element .vertical-timeline-element-marks {
+    font-size: 15px;
+    font-weight: 400;
+}
